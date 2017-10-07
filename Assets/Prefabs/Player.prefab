@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11463506}
   - component: {fileID: 11497808}
   - component: {fileID: 11492382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469694}
   - component: {fileID: 21266056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bluecargoship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103714}

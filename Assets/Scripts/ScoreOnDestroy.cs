@@ -3,21 +3,14 @@
 using UnityEngine;
 using System.Collections;
 //------------------------------
-public class TimedDestroy : MonoBehaviour 
+public class ScoreOnDestroy : MonoBehaviour
 {
-	public float DestroyTime = 2f;
-
 	//------------------------------
-	// Use this for initialization
-	void Start ()
+	public int ScoreValue = 50;
+	//------------------------------
+	void OnDestroy()
 	{
-		Invoke("Die", DestroyTime);
-	}
-	
-	// Update is called once per frame
-	void Die () 
-	{
-		Destroy(gameObject);
+		GameController.Score += ScoreValue;
 	}
 	//------------------------------
 }

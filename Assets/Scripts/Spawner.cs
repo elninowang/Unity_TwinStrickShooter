@@ -23,9 +23,7 @@ public class Spawner : MonoBehaviour
 	//------------------------------
 	void Spawn () 
 	{
-		if(Origin == null) return;
-
-        Debug.Log("Spawn");
+		if(Origin == null)return;
 
 		Vector3 SpawnPos = Origin.position + Random.onUnitSphere * MaxRadius;
 		SpawnPos = new Vector3(SpawnPos.x, 0f, SpawnPos.z);
